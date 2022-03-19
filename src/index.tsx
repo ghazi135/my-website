@@ -5,14 +5,14 @@ import App from './component/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from "react-router-dom";
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
     <BrowserRouter  basename={process.env.PUBLIC_URL}>
         <App/>
     </BrowserRouter>, document.getElementById('root'));
 
-serviceWorker.unregister();
+serviceWorkerRegistration.unregister();
 
 reportWebVitals();
 
