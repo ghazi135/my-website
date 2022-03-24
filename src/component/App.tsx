@@ -7,7 +7,6 @@ import {Route, Routes} from 'react-router-dom';
 import Contact from "./contact/Contact";
 import Project from "./project/Project";
 import Footer from "./footer/Footer";
-import Photography from "./photos/Photography";
 import Error from "./error/Error";
 
 
@@ -21,7 +20,6 @@ function App() {
                     <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
                     <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact/>}/>
                     <Route path={process.env.PUBLIC_URL + "/project"} element={<Project/>}/>
-                    <Route path={process.env.PUBLIC_URL + "/photography"} element={<Photography />}/>
                 <Route path={process.env.PUBLIC_URL + "*"} element={<Error />}/>
 
             </Routes>
