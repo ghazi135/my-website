@@ -16,14 +16,15 @@ function App() {
             <Header/>
             <Routes >
 
-                <Route  path={process.env.PUBLIC_URL + "/"} element={<About/>}/>
-                    <Route path={process.env.PUBLIC_URL + "/about"} element={<About/>}/>
-                    <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact/>}/>
-                    <Route path={process.env.PUBLIC_URL + "/project"} element={<Project/>}/>
-                <Route path={process.env.PUBLIC_URL + "*"} element={<Error />}/>
+                <Route  path={ "/"} element={<About/>}/>
+                    <Route path={ "/about"} element={<About/>}/>
+                    <Route path={"/contact"} element={<Contact/>}/>
+                    <Route path={"/project"} element={<Project/>}/>
+                <Route path={ "*"} element={<Error />}/>
 
             </Routes>
-            <Footer/>
+             <Footer />
+
         </div>
     );
 }

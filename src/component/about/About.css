@@ -9,7 +9,9 @@
     border-radius: 50px;
     width: 300px;
 }
-
+Footer {
+    position: fixed !important;
+}
 a {
     text-decoration: none;
 

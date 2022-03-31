@@ -1,10 +1,10 @@
 .App {
     text-align: center;
+    display: flex;
+    flex-flow: column ;
 }
 
-Footer {
-    position: fixed;
-}
+
 
 
 .App-header {

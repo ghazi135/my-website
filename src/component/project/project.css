@@ -8,7 +8,9 @@
 
     font-size: 5px
 }
-
+Footer {
+    position: relative !important;
+}
 .line {
     width: 100%;
     height: 0;
