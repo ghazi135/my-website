@@ -9,9 +9,7 @@
     border-radius: 50px;
     width: 300px;
 }
-Footer {
-    position: fixed !important;
-}
+
 a {
     text-decoration: none;
 
@@ -20,6 +18,7 @@ a {
 p {
     font-size: 17px;
     font-weight: 550;
+    text-align: start;
 
 }
 

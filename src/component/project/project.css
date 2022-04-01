@@ -8,8 +8,8 @@
 
     font-size: 5px
 }
-Footer {
-    position: relative !important;
+.Project {
+    position: relative ;
 }
 .line {
     width: 100%;

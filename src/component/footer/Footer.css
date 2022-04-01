@@ -1,13 +1,52 @@
 
 .footer-style {
-    position:absolute;
-    bottom:0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+.footer-style-end {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px;
+
+
 }
 
 
-.logo-footer {
-    margin: 5px;
-    width: 30px;
-    height: 30px;
+.footer-style-mobile {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+
+
 }
+
+.footer-style-end-mobile {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+.links{
+    margin: 2px;
+}
+
+.text {
+    right: 0;
+
+}
+
+
 
