@@ -45,7 +45,7 @@ function Footer() {
 
 
                          <div className="footer-style-end">
-                             &#169; ghazi bouzazi 2022 • all rights reserved
+                             &#169; ghazi bouzazi 2023 • all rights reserved
                          </div>
 
                      </div>
