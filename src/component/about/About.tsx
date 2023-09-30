@@ -22,8 +22,8 @@ function About() {
 
                             <p>Currently I work as a Full Stack engineer for <a target="_blank"
                                                                                 rel="noreferrer noopener"
-                                                                                href="https://www.qiminfo.ch/"><span
-                                className="qim-info">QIM INFO</span></a> Come build greet experience for our clients
+                                                                                href="https://www.smartwavesa.com"><span
+                                className="qim-info">SMARTWAVE SA</span></a> Come build greet experience for our clients
                                 with us. We're hiring!</p>
 
                             <p>I'm from Tunisia and i moved to France when i was 17 years old. If I'm not beep booping,
