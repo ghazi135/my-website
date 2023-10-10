@@ -20,11 +20,7 @@ function About() {
                                 Stack web developer. I'm interested in anything tech — especially web dev and UI/UX. I
                                 love building delightful and clean experiences.</p>
 
-                            <p>Currently I work as a Full Stack engineer for <a target="_blank"
-                                                                                rel="noreferrer noopener"
-                                                                                href="https://www.smartwavesa.com"><span
-                                className="qim-info">SMARTWAVE SA</span></a> Come build greet experience for our clients
-                                with us. We're hiring!</p>
+                            <p>Currently I work as a Full Stack engineer</p>
 
                             <p>I'm from Tunisia and i moved to France when i was 17 years old. If I'm not beep booping,
                                 you can find me playing frisbee, visiting friendos, Yelping restaurants to try, or
