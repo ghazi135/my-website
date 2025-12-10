@@ -29,7 +29,7 @@ function Footer() {
                              </a>
                              <a className="links"
                                 target="_blank"
-                                // TikTok icon removed due to missing import/component. If you add a valid TikTok Icon import, restore these lines appropriately.
+                                rel="noreferrer noopener"
                                 href="https://www.linkedin.com/in/ghazi-bouzazi/">
                                  <LinkedInIcon sx={{ color: "white"}}/>
                              </a>
