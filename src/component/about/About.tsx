@@ -66,7 +66,7 @@ function About() {
                         <Col md={{span: 5, offset: 2}}>
                         <p>
   Hi <span className="wave" role="img" aria-label="wave">👋🏼</span> I'm Ghazi —
-  a Full-Stack Software Engineer, CTO, and tech entrepreneur. I design and build
+  a Full-Stack Software Engineer, CTO, co-founder, and tech entrepreneur. I design and build
   scalable applications with a strong focus on clean architecture, usability, and
   high-quality user experiences.
 </p>
@@ -74,7 +74,7 @@ function About() {
 <p>
   I currently lead the technical vision of multiple projects, including Nova Metrics
   and I-RIIDE, where I work across backend architecture, mobile development, cloud
-  infrastructure, and product strategy.
+  infrastructure, and product strategy as both CTO and co-founder.
 </p>
 
 <p>
