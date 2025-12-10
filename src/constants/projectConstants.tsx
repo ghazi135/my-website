@@ -5,8 +5,25 @@ import SafetyNet from '../assets/safetyNet.png';
 import Mediscreen from '../assets/mediscreen.png';
 import PayMyBuddy from '../assets/payMyBuddy.jpg';
 import Fusescrum from '../assets/fuzeScrum.png';
+import IRiide from '../assets/i.png';
 
 export const projectInfo = [
+    {
+        image: IRiide,
+        width: '350px',
+        height: '200px',
+        title: (<div>i-riide</div>),
+        stack: 'Flutter + Web Technologies',
+        description: (
+            <p>
+                A shared mobility platform reshaping cities through shared access. The goal is to make car ownership optional in urban Europe by creating seamless access to shared vehicles, parking, charging, and bikes. Less space wasted, fewer emissions, and more freedom.
+            </p>
+        ),
+        buttons: {
+            name: 'website',
+            link: 'https://i-riide.com/about-us/',
+        }
+    },
     {
         image: Fusescrum,
         width: '350px',

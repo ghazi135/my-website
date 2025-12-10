@@ -4,6 +4,13 @@
     padding: 7%;
 }
 
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .img-about {
     box-shadow: 2rem 2rem 2rem #000;
     border-radius: 50px;
@@ -51,4 +58,20 @@ span.wave {
     40% {
         transform: rotate(9deg);
     }
+}
+
+.social-links-about {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link-about {
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+}
+
+.social-link-about:hover {
+    transform: scale(1.2);
 }

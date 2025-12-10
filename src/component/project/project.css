@@ -24,6 +24,15 @@
     height: 0;
     border: transparent;
     margin-top: 30px;
+    text-align: center;
+}
+
+.ProjectCard h1 {
+    text-align: center;
+}
+
+.ProjectCard p {
+    text-align: center;
 }
 
 .img-project {
@@ -31,30 +40,69 @@
 }
 
 .code {
-    width: 7%;
+    width: auto;
+    min-width: fit-content;
     text-decoration: none;
-    color: coral;
-    margin-top: 50px;
-    border: 1px solid coral;
+    color: #ff6600;
+    margin: 50px auto 0;
+    border: 1px solid #ff6600;
     border-radius: 9px;
+    padding: 5px 15px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .code:hover {
     box-shadow: 7px 4px 4px #000;
-    color: coral;
+    color: #ff6600;
 }
 
 .code-mobile {
-    width: 13%;
+    width: auto;
+    min-width: fit-content;
     text-decoration: none;
-    color: coral;
-    margin-top: 70px;
-    border: 1px solid coral;
+    color: #ff6600;
+    margin: 70px auto 0;
+    border: 1px solid #ff6600;
     border-radius: 9px;
-
+    padding: 5px 15px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .code-mobile:hover {
     box-shadow: 7px 4px 4px #000;
-    color: coral;
+    color: #ff6600;
+}
+
+.website-btn {
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+    width: auto !important;
+    min-width: fit-content;
+    padding: 5px 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.website-btn:hover {
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+}
+
+.website-btn-mobile {
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+    width: auto !important;
+    min-width: fit-content;
+    padding: 5px 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.website-btn-mobile:hover {
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
 }

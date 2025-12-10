@@ -23,7 +23,8 @@ const ProjectCard = (props: { image: string; width: any; height: any; title: obj
                         padding: '8px',
                         borderColor: 'white',
                         borderRadius: 2,
-                        overflow: 'auto'
+                        overflow: 'auto',
+                        textAlign: 'center'
                     }}>
                         <img className="img-project" src={props.image} width={props.width} height={props.height}
                              alt="ghazi"/>
@@ -31,7 +32,8 @@ const ProjectCard = (props: { image: string; width: any; height: any; title: obj
                             stack : <span className='ProjectsCardMobile-grid-right'> {props.stack} </span>
                         </div>
 
-                        <a target="_blank" rel="noreferrer noopener" className="code"
+                        <a target="_blank" rel="noreferrer noopener" 
+                           className={props.buttons.name === 'website' ? 'code website-btn' : 'code'}
                            href={props.buttons.link}><span>{props.buttons.name}</span></a>
                         <div className="line"></div>
                         <div><h1>{props.title}</h1></div>
@@ -53,7 +55,8 @@ const ProjectCard = (props: { image: string; width: any; height: any; title: obj
                         padding: '8px',
                         borderColor: 'white',
                         borderRadius: 2,
-                        overflow: 'auto'
+                        overflow: 'auto',
+                        textAlign: 'center'
                     }}>
                         <img className="img-project" src={props.image} width={props.width} height={props.height}
                              alt="ghazi"/>
@@ -61,7 +64,8 @@ const ProjectCard = (props: { image: string; width: any; height: any; title: obj
                             stack : <span className='ProjectsCardMobile-grid-right'> {props.stack} </span>
                         </div>
 
-                        <a target="_blank" rel="noreferrer noopener" className="code-mobile"
+                        <a target="_blank" rel="noreferrer noopener" 
+                           className={props.buttons.name === 'website' ? 'code-mobile website-btn-mobile' : 'code-mobile'}
                            href={props.buttons.link}><span>{props.buttons.name}</span></a>
                         <div className="line"></div>
                         <div><h1>{props.title}</h1></div>
