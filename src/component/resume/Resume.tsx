@@ -1,7 +1,7 @@
 import React from 'react';
 import './Resume.css';
 import {Fade} from "@mui/material";
-import {useSearchParams} from "react-router-dom";
+import {FULL_NAME, useLang} from "../../i18n/LanguageContext";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StorageOutlined from '@mui/icons-material/StorageOutlined';
@@ -11,7 +11,8 @@ import CloudOutlined from '@mui/icons-material/CloudOutlined';
 import AccountTreeOutlined from '@mui/icons-material/AccountTreeOutlined';
 import ViewKanbanOutlined from '@mui/icons-material/ViewKanbanOutlined';
 import picture from "../../assets/profile-picture.jpg";
-import {cvContent, Lang, SkillIcon} from "../../constants/cvConstants";
+import {cvContent, SkillIcon} from "../../constants/cvConstants";
+import LangSwitch from "../LangSwitch";
 import Timeline, {TimelineItem} from "./Timeline";
 
 const SKILL_ICONS: Record<SkillIcon, React.ElementType> = {
@@ -26,11 +27,9 @@ const SKILL_ICONS: Record<SkillIcon, React.ElementType> = {
 const CEFR = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 function Resume() {
-    const [searchParams, setSearchParams] = useSearchParams();
-    const lang: Lang = searchParams.get('lang') === 'fr' ? 'fr' : 'en';
+    const {lang} = useLang();
     const cv = cvContent[lang];
-
-    const switchLang = (next: Lang) => setSearchParams(next === 'en' ? {} : {lang: next});
+    const name = FULL_NAME[lang];
 
     // Data is stored newest-first; the timelines read left (oldest) to right (newest).
     const experience: TimelineItem[] = [...cv.experience].reverse().map(e => ({
@@ -48,16 +47,13 @@ function Resume() {
             <div className="Resume" lang={lang}>
 
                 <header className="cv-hero">
-                    <div className="cv-lang" role="group" aria-label="Language">
-                        <button aria-pressed={lang === 'en'} onClick={() => switchLang('en')}>EN</button>
-                        <button aria-pressed={lang === 'fr'} onClick={() => switchLang('fr')}>FR</button>
-                    </div>
+                    <LangSwitch className="cv-lang"/>
 
                     <div className="cv-avatar">
-                        <img src={picture} alt="Ghazi Bouzazi"/>
+                        <img src={picture} alt={name}/>
                     </div>
                     <div className="cv-hero-text">
-                        <h1>Ghazi Bouzazi</h1>
+                        <h1>{name}</h1>
                         <p className="cv-headline">{cv.headline}</p>
                         <div className="cv-contact">
                             <a className="cv-pill" href="mailto:gbouzazi@gmail.com">

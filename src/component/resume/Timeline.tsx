@@ -20,7 +20,7 @@ interface TimelineProps {
     labels: { current: string; previous: string; next: string };
 }
 
-const CURRENT_RE = /present|présent/i;
+const CURRENT_RE = /present|présent|الآن/i;
 const startYear = (period: string) => period.match(/\d{4}/)?.[0] ?? '';
 
 function Timeline({idPrefix, items, labels}: TimelineProps) {
@@ -57,7 +57,7 @@ function Timeline({idPrefix, items, labels}: TimelineProps) {
 
     return (
         <div className="tl">
-            <div className="tl-rail">
+            <div className="tl-rail" dir="ltr">
                 <button className="tl-arrow" aria-label={labels.previous}
                         disabled={selected === 0} onClick={() => select(selected - 1)}>
                     <ChevronLeft/>

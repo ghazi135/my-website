@@ -1,1 +1,12 @@
+.header-nav {
+    align-items: center;
+}
 
+.header-lang {
+    margin-inline-start: 12px;
+}
+
+.header-lang-mobile {
+    margin-inline-start: auto;
+    margin-inline-end: 10px;
+}

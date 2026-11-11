@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,4 +16,25 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ---------- Arabic / right-to-left ---------- */
+
+html[lang="ar"] body,
+html[lang="ar"] button {
+    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Directional icons (arrows) point the other way in RTL. */
+[dir="rtl"] .flip-rtl {
+    transform: scaleX(-1);
+}
+
+/* Arabic letters have deeper descenders/ascenders; gradient (background-clip: text)
+   titles clip anything outside the line box, so give them room. */
+html[lang="ar"] .home-name,
+html[lang="ar"] .contact-head h1,
+html[lang="ar"] .proj-head h1 {
+    line-height: 1.45;
+    padding: 0.05em 0 0.12em;
 }

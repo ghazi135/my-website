@@ -5,6 +5,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import {FULL_NAME, useLang, useT} from "../../i18n/LanguageContext";
+
+const RIGHTS = {en: 'all rights reserved', fr: 'tous droits réservés', ar: 'جميع الحقوق محفوظة'};
 
 // Custom TikTok Icon Component
 const TikTokIcon = (props: any) => (
@@ -13,6 +16,10 @@ const TikTokIcon = (props: any) => (
     </SvgIcon>
 );
 function Footer() {
+    const rights = useT(RIGHTS);
+    const {lang} = useLang();
+    const owner = lang === 'ar' ? FULL_NAME.ar : FULL_NAME.en.toLowerCase();
+    const year = new Date().getFullYear();
 
     return (
          <div>
@@ -58,7 +65,7 @@ function Footer() {
 
 
                          <div className="footer-style-end">
-                             &#169; ghazi bouzazi 2026 • all rights reserved
+                             &#169; {owner} {year} • {rights}
                          </div>
 
                      </div>
@@ -101,7 +108,7 @@ function Footer() {
 
 
                          <div className="footer-style-end-mobile">
-                             &#169; ghazi bouzazi 2023 • all rights reserved
+                             &#169; {owner} {year} • {rights}
                          </div>
 
                      </div>

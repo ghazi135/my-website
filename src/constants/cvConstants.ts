@@ -1,4 +1,6 @@
-export type Lang = 'en' | 'fr';
+import type {Lang} from '../i18n/LanguageContext';
+
+export type {Lang};
 
 export interface CvGroup {
     icon: string;
@@ -406,5 +408,183 @@ export const cvContent: Record<Lang, CvContent> = {
         ],
         strengths: ['Technique', 'Leadership', 'Mentorat', 'Autonomie', 'Résolution de problèmes', 'Adaptabilité', 'Collaboration', 'Esprit Agile'],
         interests: ['Photographie', 'Voyages & Découvertes', 'Langues & Cultures', 'Sport'],
+    },
+    ar: {
+        headline: 'مهندس برمجيات أول Full-Stack والذكاء الاصطناعي | DevOps، LLMOps، RAG',
+        sections: {
+            profile: 'الملف الشخصي',
+            skills: 'المهارات الأساسية',
+            languages: 'اللغات',
+            experience: 'الخبرة المهنية',
+            education: 'التعليم',
+            strengths: 'نقاط القوة المهنية',
+            interests: 'الاهتمامات',
+        },
+        ui: {current: 'حالياً', previous: 'السابق', next: 'التالي'},
+        profile:
+            'مهندس برمجيات أول في Full-Stack والذكاء الاصطناعي، حاصل على مؤهل من المستوى السابع في الإطار الأوروبي للمؤهلات ' +
+            '(EQF 7، ما يعادل الماجستير)، وذو خبرة مثبتة في تصميم تطبيقات المؤسسات وأنظمة الذكاء الاصطناعي متعددة الوكلاء ' +
+            'وتوسيعها ونشرها. سجل حافل في الجمع بين تطوير Full-Stack وممارسات DevOps السحابية و LLMOps (الذكاء الاصطناعي ' +
+            'الوكيلي، RAG الهجين، خطوط التقييم، ونشر النماذج اللغوية محلياً). قائد تقني وشريك مؤسس متمرّس في إرساء معايير ' +
+            'الهندسة وضمان موثوقية بيئة الإنتاج وقيادة الفرق نحو التنفيذ.',
+        skills: [
+            {icon: 'backend', label: 'الواجهة الخلفية', items: ['Java 8/11/17', 'Spring Boot', 'C#', 'Python / FastAPI', 'Node.js']},
+            {icon: 'frontend', label: 'الواجهة الأمامية والجوال', items: ['Angular', 'React', 'React Native', 'Flutter', 'TypeScript', 'JavaScript']},
+            {icon: 'ai', label: 'الذكاء الاصطناعي ونماذج اللغة', items: ['الذكاء الاصطناعي الوكيلي', 'LangChain', 'LangGraph', 'CrewAI', 'RAG', 'LlamaIndex', 'Qdrant', 'pgvector', 'استدعاء الدوال / Tool Use']},
+            {icon: 'devops', label: 'DevOps، LLMOps', items: ['Docker', 'Kubernetes', 'GitLab CI/CD', 'Jenkins', 'AWS', 'Google Cloud', 'Terraform', 'vLLM', 'Ollama', 'LangSmith', 'Ragas', 'Guardrails']},
+            {icon: 'architecture', label: 'البنية والبيانات', items: ['Microservices', 'CQRS', 'REST / SOAP / GraphQL', 'SQL', 'Oracle', 'PostgreSQL', 'NoSQL', 'قواعد البيانات المتجهية']},
+            {icon: 'methods', label: 'المنهجيات', items: ['Agile', 'Kanban', 'Git Flow', 'Jira', 'Confluence']},
+        ],
+        languages: [
+            {name: 'الفرنسية', level: 'C2'},
+            {name: 'العربية', level: 'C2'},
+            {name: 'الإنجليزية', level: 'C1'},
+            {name: 'الألمانية', level: 'A1', note: 'قيد التعلّم'},
+        ],
+        experience: [
+            {
+                title: 'شريك مؤسس · مهندس أول Full Stack والذكاء الاصطناعي',
+                company: 'I-RIIDE',
+                period: 'سبتمبر 2024 – حتى الآن',
+                location: 'فريبورغ، سويسرا',
+                summary: 'i-riide تطبيق شامل (super-app) للتنقّل يجمع بين مواقف السيارات، وشحن السيارات الكهربائية، ومشاركة السيارات، والتأجير، والتنقّل الخفيف، ووسائل النقل العام السويسرية. أعمل على المنتج بأكمله: تطبيق الجوال، ومنصة الشركاء B2B، ولوحة الإدارة.',
+                bullets: [],
+                groups: [
+                    {
+                        icon: '📱',
+                        title: 'تطبيق الجوال (Flutter، iOS، Android)',
+                        bullets: [
+                            'المساهم الرئيسي: أكثر من 1,250 commit، حتى الإصدار v2.0.7',
+                            'التكامل مع CFF/SBB: تخطيط الرحلات، وإصدار التذاكر، وإعادة تصميم البحث عن الرحلات',
+                            'شركات التأجير والأساطيل (QOAD، iBiola، MyRentCar) والشحن عبر التجوال من خلال Hubject (OICP)',
+                            'خريطة موحّدة، ومشاركة المواقف والسيارات بين الأفراد، والحجوزات، والمحادثة، والمحفظة والمبالغ المستردّة، وبرامج الولاء والمسابقات، والإشعارات',
+                            'Live Activities على iOS والنوافذ العائمة على Android للتتبّع المباشر',
+                            'الأمان: نقل منطق المحفظة والحجوزات وبيانات اعتماد التأجير إلى الخادم',
+                            '5 لغات (EN، FR، DE، IT، ES)',
+                        ],
+                    },
+                    {
+                        icon: '💼',
+                        title: 'منصة الشركاء (React، TypeScript)',
+                        bullets: [
+                            'بناء لوحة تحكّم SaaS للشركات (B2B) من الصفر لإدارة السيارات والمواقف ومحطات الشحن والدراجات',
+                            'اشتراكات Stripe، وقيود حسب الباقة، والفوترة، وتحويل المستحقات',
+                            'صفحات حجز عامة مع الدفع عبر Stripe والتتبّع في الوقت الفعلي',
+                            'إدارة الفرق، والمحادثة بين الشريك والمستأجر، والدعم، و Business Wallet لتمكين الشركات من تمويل تنقّل موظفيها',
+                        ],
+                    },
+                    {
+                        icon: '🛠️',
+                        title: 'لوحة الإدارة (React، Ant Design)',
+                        bullets: [
+                            'الإشراف على المستخدمين والشركاء والإعلانات والحجوزات',
+                            'متابعة الاحتيال والمالية والدعم، وسجلات التدقيق، والولاء، والمسابقات، والقسائم، وحملات الإشعارات',
+                        ],
+                    },
+                ],
+            },
+            {
+                title: 'مرشد في هندسة البرمجيات ومقيّم تقني',
+                company: 'OpenClassrooms',
+                period: 'فبراير 2024 – حتى الآن',
+                location: 'عن بُعد',
+                bullets: [
+                    'الإرشاد التقني: توجيه طلاب هندسة البرمجيات وتدريبهم على Java، Angular، وإجراء مراجعات تقنية للكود وتقديم ملاحظات منظّمة وقابلة للتطبيق.',
+                    'تنمية المهارات: تعزيز الكفاءة التقنية والتفكير النقدي وممارسات العمل الجماعي لدى الطلاب لإعدادهم لمعايير سوق العمل.',
+                ],
+            },
+            {
+                title: 'المدير التقني (CTO)',
+                company: 'Nova Metrics',
+                period: 'فبراير 2024 – ديسمبر 2025',
+                location: 'فريبورغ، سويسرا',
+                bullets: [
+                    'القيادة التقنية: قيادة البنية والتصميم والتطوير الكامل لحلول المؤسسات باستخدام React، React Native، Java/Spring Boot.',
+                    'الإدارة الهندسية: وضع الاستراتيجية التقنية الشاملة، والإشراف على فرق هندسية متعددة التخصصات، وتنسيق التسليمات التقنية مع أصحاب المصلحة.',
+                ],
+            },
+            {
+                title: 'مهندس أول للبرمجيات والبنية التحتية (أنظمة البيانات الطبية)',
+                company: 'SmartGene',
+                period: 'سبتمبر 2023 – فبراير 2024',
+                location: 'لوزان، سويسرا',
+                bullets: [
+                    'تطوير Full-Stack: تطوير وتحسين تطبيق لإدارة البيانات الطبية والجينية باستخدام React، Angular، Java 11، Spring Boot، PostgreSQL.',
+                    'DevOps والبنية التحتية: صيانة وتحسين البنية التحتية الأساسية ومسارات النشر باستخدام Kubernetes، Docker، Ansible وخطوط GitLab CI/CD.',
+                ],
+            },
+            {
+                title: 'مهندس أول Full-Stack وسحابة (أنظمة نووية حرجة)',
+                company: 'QIM INFO',
+                period: 'ديسمبر 2022 – يونيو 2023',
+                location: 'غرونوبل، فرنسا',
+                bullets: [
+                    'تطوير أنظمة الطاقة النووية: تطوير ميزات أساسية باستخدام Java، Spring Boot، Groovy، Angular لمنصة إدارة التدخّلات الميدانية لدى EDF، بقيادة Atos.',
+                    'Full-Stack، DevOps سحابي: تطوير تطبيقات Java، Vue.js مع إنشاء خطوط اختبار ونشر مستمرّة باستخدام Docker، Artifactory، GitLab CI/CD، AWS.',
+                ],
+            },
+            {
+                title: 'مطوّر Full Stack – تدريب بالتناوب',
+                company: 'Hardis Group',
+                period: 'سبتمبر 2020 – ديسمبر 2022',
+                location: 'غرونوبل، فرنسا',
+                bullets: [
+                    'ترحيل تطبيقات AngularJS إلى React لصالح Schneider Electric، وإعداد دراسة ترحيل من AngularJS/PHP إلى React/ASP.NET لصالح INSEE.',
+                    'تطوير تطبيقات Angular/Python (FastAPI)، Angular/Spring Boot باستخدام بنية CQRS.',
+                ],
+            },
+            {
+                title: 'مطوّر Full Stack – عمل حرّ',
+                company: 'BeWeb SA',
+                period: 'أبريل 2019 – أكتوبر 2020',
+                location: 'جنيف، سويسرا',
+                bullets: [
+                    'ترحيل مكوّنات AngularJS إلى Angular 9 وواجهات REST من PHP إلى Node.js/Express.js.',
+                    'العمل في بيئة Agile باستخدام SQL، Oracle، TypeScript، JavaScript، Jira، Git، Bitbucket.',
+                ],
+            },
+            {
+                title: 'مطوّر PowerShell / SQL – عمل حرّ',
+                company: 'CEGID',
+                period: 'ديسمبر 2018 – أبريل 2019',
+                location: 'ليون، فرنسا',
+                bullets: ['أتمتة ترحيل البيانات من MS SQL إلى Oracle باستخدام سكربتات PowerShell.'],
+            },
+        ],
+        education: [
+            {
+                title: 'ما يعادل ماجستير العلوم في هندسة البرمجيات (المستوى 7 EQF)',
+                school: 'OpenClassrooms',
+                period: 'مارس 2026 – يوليو 2026',
+                location: 'باريس، فرنسا',
+                bullets: ['إتقان هندسة البرمجيات Full-Stack، وقيادة تنفيذ المشاريع، والنشر الكامل عبر DevOps مع CI/CD وتنسيق الخدمات السحابية.'],
+            },
+            {
+                title: 'شهادة DevOps Foundation (المستوى 1) — المرجع: OSOCV1',
+                school: 'ORSYS',
+                period: 'أبريل 2023 – مايو 2023',
+                location: 'غرونوبل، فرنسا',
+                bullets: ['ثقافة DevOps، والأتمتة، والتكامل والتسليم المستمرّان (CI/CD)، و Kanban، وقياس أداء تقنية المعلومات، والتحسين المستمر.'],
+            },
+            {
+                title: 'مطوّر برمجيات Full-Stack (مستوى البكالوريوس / المستوى 6 EQF)',
+                school: 'OpenClassrooms',
+                period: 'سبتمبر 2020 – نوفمبر 2021',
+                location: 'باريس، فرنسا',
+                bullets: ['Java، Spring Boot، Angular، React وواجهات API والخدمات المصغّرة و Docker، Kubernetes، CI/CD وقواعد البيانات وإدارة المشاريع.'],
+            },
+            {
+                title: 'بكالوريا العلوم والتقنيات الصناعية (STI2D)',
+                school: 'Lycée Briffaut',
+                period: '2014 – 2015',
+                location: 'فالانس، فرنسا',
+                bullets: [
+                    'التخصص: الأنظمة الإلكترونية والرقمية.',
+                    'المجال: علوم وتقنيات الصناعة والتنمية المستدامة.',
+                ],
+            },
+        ],
+        strengths: ['الكفاءة التقنية', 'القيادة', 'الإرشاد', 'الاستقلالية', 'حلّ المشكلات', 'القدرة على التكيّف', 'التعاون', 'عقلية Agile'],
+        interests: ['التصوير الفوتوغرافي', 'السفر والاستكشاف', 'اللغات والثقافات', 'الرياضة'],
     },
 };
