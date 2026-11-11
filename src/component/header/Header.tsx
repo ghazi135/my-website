@@ -31,6 +31,9 @@ function Header() {
                                 <LinkContainer to={process.env.PUBLIC_URL + "/project"}>
                                     <Nav.Link>Project</Nav.Link>
                                 </LinkContainer>
+                                <LinkContainer to={process.env.PUBLIC_URL + "/cv"}>
+                                    <Nav.Link>CV</Nav.Link>
+                                </LinkContainer>
                                 <Nav.Link href="https://www.photography.ghazibouzazi.com/">Photography</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>

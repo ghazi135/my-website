@@ -8,6 +8,7 @@ import Contact from "./contact/Contact";
 import Project from "./project/Project";
 import Footer from "./footer/Footer";
 import Error from "./error/Error";
+import Resume from "./resume/Resume";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path={ "/about"} element={<About/>}/>
                     <Route path={"/contact"} element={<Contact/>}/>
                     <Route path={"/project"} element={<Project/>}/>
+                    <Route path={"/cv"} element={<Resume/>}/>
                 <Route path={ "*"} element={<Error />}/>
 
             </Routes>
